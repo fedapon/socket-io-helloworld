@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/chat.css">
+        <title>socket-io-hello-world</title>
+    </head>
+    <body>
+        <h1>Chat Client</h1>
+        <div id="chat-container">
+            <div id="display"></div>
+            <div>
+                <input type="text" id="name" placeholder="Name" />
+            </div>
+            
+            <div>
+                <input type="text" id="message" placeholder="Messsage" />
+                <button id="btn-send">Send</button>
+            </div>
+        </div>
+
+        <div id="join-container">
+            <div>
+                <input type="number" id="room" placeholder="Room number (default 1)" />
+                <button id="btn-join">Join</button>
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+        integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+        crossorigin="anonymous"
+    ></script>
+    <script src="js/client.js"></script>
+</html>
