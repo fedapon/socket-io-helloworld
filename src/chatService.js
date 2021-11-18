@@ -8,7 +8,7 @@ const chatService = (httpServer) => {
         console.log(`New connection ID: ${socket.id}`)
         
         //handle room joins
-        socket.on('chat:message:join', (data) => {
+        socket.on('chat:join', (data) => {
             console.log(`Connection ID: ${socket.id} - Joined to Room: ${data.room}`)
             socket.join(data.room)
         })

@@ -23,7 +23,7 @@ joinBtn.addEventListener('click', function () {
     chatContainer.style.display = 'block'
     joinContainer.style.display = 'none'
     roomNumber = room.value != '' ? room.value : 1
-    socket.emit('chat:message:join', {
+    socket.emit('chat:join', {
         room: roomNumber
     })
 })
